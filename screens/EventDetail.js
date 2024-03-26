@@ -1,13 +1,13 @@
 import { StyleSheet, Text, View, Image, Alert, ScrollView } from "react-native";
 import React from "react";
-import PressableButton from "./PressableButton";
+import PressableButton from "../components/PressableButton";
 import { colors } from "../helper/Color";
 
 const joinHandler = () => {
   Alert.alert("Successfully Joined!");
 };
 
-export default function EventDetail() {
+export default function EventDetail({ navigation, route }) {
   return (
     <View>
       <Image
